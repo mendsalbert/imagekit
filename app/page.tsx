@@ -550,11 +550,7 @@ export default function Home() {
                           alt="Transformed"
                           className="max-w-full max-h-full object-contain rounded"
                           onLoad={() => {
-                            console.log(
-                              "✅ Transformed image loaded successfully:",
-                              processedImageUrl
-                            );
-                            setIsImageLoading(false); // Hide loading spinner
+                            setIsImageLoading(false);
                           }}
                           onError={(e) => {
                             console.error(
